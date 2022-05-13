@@ -16,7 +16,7 @@ KIND := ../bin/kind
 GO_FILES := $(shell find .. -prune -o -path ../e2e -prune -o -name '*.go' -print)
 BACKING_STORE := ./build
 
-BUILD_IMAGE := false
+BUILD_IMAGE := true
 
 $(KUBECTL):
 	mkdir -p $(BINDIR)

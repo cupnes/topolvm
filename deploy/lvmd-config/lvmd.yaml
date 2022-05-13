@@ -1,11 +1,8 @@
 socket-name: /run/topolvm/lvmd.sock
 device-classes:
-  - name: ssd
-    volume-group: myvg1
-    default: true
-    spare-gb: 10
   - name: ssd-thin
     volume-group: myvg1
+    default: true
     type: thin
     thin-pool:
       name: thinpool
