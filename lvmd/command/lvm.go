@@ -115,6 +115,7 @@ func parseOutput(cmd, fields string, args ...string) ([]LVInfo, error) {
 	if err := c.Wait(); err != nil {
 		return nil, err
 	}
+	log.Info("parseOutput: out = "+string(out), nil)
 	return parseLines(string(out)), nil
 }
 
